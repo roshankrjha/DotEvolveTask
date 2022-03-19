@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+<div class="container">    
+<section>
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong shadow-lg" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">      
+              <h3 class="mb-5">Profile</h3>
+              <hr class="my-4">
+              <% if( success != '') { %>
+                <div class="alert alert-success" role="alert">
+                  <%= success %>
+                </div>
+                <% } %>
+              
+                <% if( error != '') { %>
+                  <div class="alert alert-danger" role="alert">
+                    <%= error %>
+                  </div>
+                <% } %>
+                <div class="form-outline mb-4">
+                    <p class="form-control form-control-lg"><%= username %></p>
+                </div>
+                <div class="form-outline mb-4">
+                    <p class="form-control form-control-lg"><%=  useremail %></p>
+                </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+</div>``
+<%- include('partials/footer') %>
